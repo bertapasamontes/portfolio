@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { SmallInfoPorfileComponent } from "./components/atomos/small-info-porfile/small-info-porfile.component";
+import { PortfolioLayoutComponent } from "./components/layouts/portfolio-layout/portfolio-layout.component";
 
 @Component({
   selector: 'app-root',
-  imports: [SmallInfoPorfileComponent],
+  imports: [PortfolioLayoutComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
