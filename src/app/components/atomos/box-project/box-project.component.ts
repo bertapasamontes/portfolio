@@ -7,5 +7,5 @@ import { Component, Input } from '@angular/core';
   styleUrl: './box-project.component.scss'
 })
 export class BoxProjectComponent {
-  @Input() project!:{name:string, title: string, image: string};
+  @Input() project!:{name:string, description: string, image: string, tags:string[]};
 }

@@ -2,11 +2,14 @@
     <figure class="image"><img src="{{project.image}}" alt="img-{{project.name}}" class="img-fluid img-project">
     </figure>
     <p>{{project.name}}</p>
-    <h2 class="titulo-proyecto" id="titulo-tobliss">{{project.title}}</h2>
+    <h2 class="titulo-proyecto" id="titulo-tobliss">{{project.description}}</h2>
     <div class="tags">
-        <span class="tag">Figma</span>
+        <!-- <span class="tag">Figma</span>
         <span class="tag">Responsive Design</span>
         <span class="tag">Acesibilidad</span>
-        <span class="tag">Usabilidad</span>
+        <span class="tag">Usabilidad</span> -->
+        @for (tag of project.tags; track tag) {
+            <span class="tag">{{tag}}</span>
+        }
     </div>
 </div>

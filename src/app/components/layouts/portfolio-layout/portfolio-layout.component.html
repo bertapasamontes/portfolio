@@ -1,12 +1,10 @@
 <div class="container">
-    <div class="row">
-      <div class="col-md-6"><app-small-info-porfile></app-small-info-porfile></div>
-    </div>
+    <app-navbar></app-navbar>
     <div class="row">
         @for(proyecto of projects; track proyecto){
-            <div class="col">
-                <app-box-project [project]="proyecto"></app-box-project>
-            </div>
+        <div class="col">
+            <app-box-project [project]="proyecto"></app-box-project>
+        </div>
         }
     </div>
-  </div>
+</div>

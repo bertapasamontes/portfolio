@@ -1,18 +1,27 @@
 import { Component } from '@angular/core';
-import { SmallInfoPorfileComponent } from '../../atomos/small-info-porfile/small-info-porfile.component';
+import { SmallInfoProfileComponent } from '../../atomos/small-info-porfile/small-info-profile.component';
 import { BoxProjectComponent } from "../../atomos/box-project/box-project.component";
 import { HttpClient } from '@angular/common/http';
 
-import proyectos from '../../../proyectos.json';
+import { NavbarComponent } from "../../molecules/navbar/navbar.component";
+import { ProjectsService } from '../../../services/projects.service';
 
 @Component({
   selector: 'app-portfolio-layout',
-  imports: [SmallInfoPorfileComponent, BoxProjectComponent],
+  imports: [BoxProjectComponent, NavbarComponent],
   templateUrl: './portfolio-layout.component.html',
   styleUrl: './portfolio-layout.component.scss'
 })
 export class PortfolioLayoutComponent {
-  projects = proyectos;
+  projects: any[] = [];
+
+  constructor(
+    private projectsService: ProjectsService
+  ){}
+
+  ngOnInit(){
+    this.projectsService.getProjects().subscribe((data)=>{this.projects = data})
+  }
   // constructor(
   //   private http: HttpClient
   // ){

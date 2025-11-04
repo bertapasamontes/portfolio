@@ -1,0 +1,14 @@
+@import '../../../../assets/_variables.scss';
+
+.img-profile{
+    border-radius: 20px;
+    border: 2px solid $primary;
+    max-width: 200px;
+}
+.nombre{
+    font-weight: 600;
+    font-size: 22px;
+}
+.mi-descripcion{
+    font-size: 16px;
+}
