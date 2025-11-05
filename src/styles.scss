@@ -7,6 +7,7 @@
 
 body{
     font-family: 'Jost';
+    color: #101010;
 }
 
 .box{
@@ -16,4 +17,14 @@ body{
     box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
     border-radius: 0.75rem;
     padding: 10px 20px;
+}
+
+//font sizes
+
+.t-14{
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.5);
+}
+.t-16{
+    font-size: 16px;
 }

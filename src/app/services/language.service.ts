@@ -9,6 +9,7 @@ export class LanguageService {
   currentLanguaje$ = this.currentLanguaje.asObservable();
 
   setLanguaje(lang: string){
+    localStorage.removeItem('languaje');
     this.currentLanguaje.next(lang);
     localStorage.setItem('languaje', lang);
   }

@@ -2,9 +2,8 @@
     <app-navbar></app-navbar>
     <div class="row">
         @for(proyecto of projects; track proyecto){
-        <div class="col">
-            <app-box-project [project]="proyecto"></app-box-project>
-        </div>
+            <app-box-project [project]="proyecto" class="project-box"></app-box-project>
         }
     </div>
+    <app-footer></app-footer>
 </div>

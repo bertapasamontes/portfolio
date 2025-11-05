@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { LanguagesDropdownComponent } from "../../atomos/languages-dropdown/languages-dropdown.component";
+import { TranslationService } from '../../../services/translation.service';
 
 @Component({
   selector: 'app-navbar',
@@ -9,4 +10,15 @@ import { LanguagesDropdownComponent } from "../../atomos/languages-dropdown/lang
 })
 export class NavbarComponent {
 
+  translatedContent: Record<string,string> = {};
+
+  constructor(
+    private translationService: TranslationService
+  ){}
+
+  ngOnInit(){
+    this.translationService.translations$.subscribe(data => {
+      if(data) this.translatedContent = data.common;
+    })
+  }
 }

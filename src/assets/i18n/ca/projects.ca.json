@@ -3,19 +3,26 @@
         "name": "ITA Challenges",
         "description": "Pàgina web de reptes de programació",
         "tags": ["Figma", "Responsive Design", "Accesibilidad", "Usabilidad", "UX/UI"],
-        "image": "https://berta.alwaysdata.net/miportfolio/img/Screenshot_landing_ToBliss.png"
-
+        "image": "https://berta.alwaysdata.net/miportfolio/img/screenchot_ita-challenges.png",
+        "type_contract": "Pràctiques",
+        "position": "Desenvolupadora Front-end",
+        "duration": "1 mes"
+    },{
+        "name": "Michi",
+        "description": "Menjar",
+        "tags": ["Angular", "TypeScript", "Node.js", "Express", "Responsive Design", "UX/UI"],
+        "image": "https://raw.githubusercontent.com/bertapasamontes/Michi/deploy/image.png",
+        "type_contract": "Projecte",
+        "position": "Dissenyadora UX/UI i Desenvolupadora Front-End",
+        "duration": "1 any"
     },
     {
         "name": "ToBliss",
         "description": "Pàgina web responsive accessible",
         "tags": ["Figma", "Responsive Design", "Accesibilidad", "Usabilidad", "UX/UI"],
-        "image": "https://berta.alwaysdata.net/miportfolio/img/Screenshot_landing_ToBliss.png"
-    },
-    {
-        "name": "Michi",
-        "description": "Menjar",
-        "tags": ["Angular", "TypeScript", "Node.js", "Express", "Responsive Design", "UX/UI"],
-        "image": "https://raw.githubusercontent.com/bertapasamontes/Michi/deploy/image.png"
+        "image": "https://berta.alwaysdata.net/miportfolio/img/Screenshot_landing_ToBliss.png",
+        "type_contract": "Estudi de cas",
+        "position": "Dissenyadora UX/UI",
+        "duration": "6 mesos"
     }
 ]

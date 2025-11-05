@@ -9,10 +9,17 @@
 }
 
 .img-project{
-    max-width: 400px;
+    border-radius: 5px;
+}
+
+.tags{
+    display: flex;
+    margin: 12px 0px 12px 0px;
 }
 
 .tag{
-    margin: 0px 5px;
-    border: 1px solid ;
+    margin: 0px 5px 0px 0px;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #0000000F;
 }

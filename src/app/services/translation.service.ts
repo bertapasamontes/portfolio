@@ -9,16 +9,16 @@ import { BehaviorSubject, forkJoin, Observable, switchMap, map } from 'rxjs';
 export class TranslationService {
   private translations = new BehaviorSubject<any>({});
   translations$ = this.translations.asObservable();
-  private sections = ['common', 'about'];
+  private sections = ['common', 'about', "footer", "projects"];
 
  constructor(
     private http: HttpClient,
     private languageService: LanguageService
   ) { 
-    languageService.currentLanguaje$.pipe(switchMap(languaje => this.loadAllSections(languaje)))
+    languageService.currentLanguaje$.pipe(switchMap(languaje => this.loadAllSections(languaje))).subscribe(allData => this.translations.next(allData))
   }
 
-  private loadAllSections(chosenLanguaje: string){
+  loadAllSections(chosenLanguaje: string){
     const requests = this.sections.map(section => this.http.get(`assets/i18n/${chosenLanguaje}/${section}.${chosenLanguaje}.json`)); //lista de nombres de archivos que queremos traducir
 
     return forkJoin(requests).pipe(
