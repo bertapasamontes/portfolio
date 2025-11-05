@@ -1,16 +1,15 @@
 import { Component } from '@angular/core';
-import { BoxProjectComponent } from "../../atomos/box-project/box-project.component";
 import { ProjectsService } from '../../../services/projects.service';
 
 @Component({
-  selector: 'app-portfolio-layout',
-  imports: [BoxProjectComponent],
-  templateUrl: './portfolio-layout.component.html',
-  styleUrl: './portfolio-layout.component.scss'
+  selector: 'app-project-detail',
+  imports: [],
+  templateUrl: './project-detail.component.html',
+  styleUrl: './project-detail.component.scss'
 })
-export class PortfolioLayoutComponent {
+export class ProjectDetailComponent {
   projects: any[] = [];
-
+  
   constructor(
     private projectsService: ProjectsService
   ){}
@@ -18,4 +17,5 @@ export class PortfolioLayoutComponent {
   ngOnInit(){
     this.projectsService.getProjects().subscribe((data)=>{this.projects = data})
   }
+
 }

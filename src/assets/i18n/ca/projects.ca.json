@@ -1,5 +1,6 @@
 [
     {
+        "id": 3,
         "name": "ITA Challenges",
         "description": "Pàgina web de reptes de programació",
         "tags": ["Figma", "Responsive Design", "Accesibilidad", "Usabilidad", "UX/UI"],
@@ -8,6 +9,7 @@
         "position": "Desenvolupadora Front-end",
         "duration": "1 mes"
     },{
+        "id": 2,
         "name": "Michi",
         "description": "Menjar",
         "tags": ["Angular", "TypeScript", "Node.js", "Express", "Responsive Design", "UX/UI"],
@@ -17,6 +19,7 @@
         "duration": "1 any"
     },
     {
+        "id": 1,
         "name": "ToBliss",
         "description": "Pàgina web responsive accessible",
         "tags": ["Figma", "Responsive Design", "Accesibilidad", "Usabilidad", "UX/UI"],
