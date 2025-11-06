@@ -15,7 +15,7 @@ export class TranslationService {
     private http: HttpClient,
     private languageService: LanguageService
   ) { 
-    languageService.currentLanguaje$.pipe(switchMap(languaje => this.loadAllSections(languaje))).subscribe(allData => this.translations.next(allData))
+    this.languageService.currentLanguaje$.pipe(switchMap(languaje => this.loadAllSections(languaje))).subscribe(allData => this.translations.next(allData))
   }
 
   loadAllSections(chosenLanguaje: string){
