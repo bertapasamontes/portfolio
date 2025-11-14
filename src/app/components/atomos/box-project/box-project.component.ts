@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { NgClass, NgStyle } from "../../../../../node_modules/@angular/common/index";
 
 @Component({
   selector: 'app-box-project',

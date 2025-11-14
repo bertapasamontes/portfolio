@@ -1,37 +1,37 @@
-.box-proyecto{
+.box-proyecto {
     height: 100%;
 }
 
 :host {
-  display: block;
-  transition: transform 0.3s ease;
-  cursor: pointer;
+    display: block;
+    transition: transform 0.3s ease;
+    cursor: pointer;
 }
 
 :host(:hover) {
-  transform: scale(0.95);
+    transform: scale(0.95);
 }
 
-.titulo-proyecto{
+.titulo-proyecto {
     font-weight: 700;
-    font-size: x-large;
     margin-bottom: 0.5rem;
     cursor: pointer;
 }
 
-.img-project{
+.img-project {
     border-radius: 5px;
 }
 
-.tags{
+.tags {
     display: flex;
     margin: 12px 0px 12px 0px;
     font-family: 'Jost Regular';
 }
 
-.tag{
+.tag {
     margin: 0px 5px 0px 0px;
     border-radius: 5px;
     padding: 2px 10px;
-    background-color: #0000000F;
+    background-color: var(--background-color-tag);
+    color: var(--text-color-tag);
 }

@@ -1,17 +1,12 @@
 <div class="box box-proyecto">
     <figure class="image"><img src="{{project.image}}" alt="img-{{project.name}}" class="img-fluid img-project">
     </figure>
-    <div class="tags">
-        <p class="tag text-uppercase t-14">{{project.position}}</p>
-        <p class="tag text-uppercase t-14">{{project.type_contract}}</p>
+    <div class="data">
+        <div class="tags">
+            <p class="tag text-uppercase t-12">{{project.position}}</p>
+            <p class="tag text-uppercase t-12">{{project.type_contract}}</p>
+        </div>
+        <h2 class="titulo-proyecto t-16">{{project.name}}</h2>
+        <p class="t-13">{{project.description}}</p>
     </div>
-    <h2 class="titulo-proyecto" id="titulo-tobliss">{{project.name}}</h2>
-    <p>{{project.description}}</p>
-    <!-- <div class="tags">
-        @for (tag of project.tags; track tag) {
-            <span class="tag">{{tag}}</span>
-        }
-    </div> -->
-    
-    
 </div>

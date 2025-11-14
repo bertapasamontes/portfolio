@@ -1,0 +1,38 @@
+$primary: #8172b7;
+
+:root {
+    --text-color: #1f2229;
+    --primary-color: #8172b7;
+    --secundary-color: #d9d3ee;
+    --background-color: #f0f0f0;
+    --background-color-box: rgba(255, 255, 255, 0.5);
+    --background-color-box-hover: rgb(250,249, 246);
+    --background-color-transparent: ;
+    --hover-color: rgba(192, 133, 235, 0.5);
+    --border-color: rgba(255, 255, 255, 0.25);
+    --box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    --box-border-radius: 0.75rem;
+    --background-color-tag: #0000000F;
+    --text-color-tag: #222;
+} 
+html.dark-mode {
+  --background-color: #212121;
+  --background-color-box: #212121;
+  --background-color-box-hover: #303030;
+  --background-color-tag: #ffffff1a;
+  --text-color-tag: #faf9f6;
+  --text-color: #f5f5f5;
+  --border-color: #333;
+  --primary-color: #00bcd4;
+
+}
+
+// $font-color: #1f2229;
+// $primary-color: #8172b7;
+// $secundary-color: #d9d3ee;
+// $background-color: #f0f0f0;
+// $background-color-box: rgba(255, 255, 255, 0.5);
+// // $background-color-transparent: ;
+// $hover-color: rgba(192, 133, 235, 0.5);
+// $border-color: rgba(255, 255, 255, 0.25);
+ 

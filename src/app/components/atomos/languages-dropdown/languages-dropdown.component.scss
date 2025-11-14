@@ -4,11 +4,16 @@ select{
 	-webkit-appearance: none;
 	-moz-appearance: none;
 
-    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;  
+    box-shadow: var(--box-shadow);  
     border: 0px;
     border-radius: 20px;
     cursor: pointer;
     padding: 2px 8px;
+    background-color: var(--background-color-box);
+
+    &:hover{
+        background-color: var(--background-color-box-hover);
+    }
 }
 
 .options{
