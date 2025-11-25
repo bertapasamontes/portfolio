@@ -1,6 +1,17 @@
 .box-proyecto {
     height: 100%;
+    display: flex;
+    flex-direction: row;
+    position: relative;
 }
+
+@media (max-width: 800px) {
+    .box-proyecto {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
 
 :host {
     display: block;
@@ -19,11 +30,30 @@
 }
 
 .img-project {
+    // overflow: hidden;
     border-radius: 5px;
+    // position: absolute;
+    // bottom: 10vh;
+    // left: -5vh;
+    // width: 60vh;
+}
+// .img-fluid{
+//     margin: 0 1rem;
+// }
+
+.image-box {
+    margin: 0rem !important;
+    flex: 60%;
+}
+
+.data-box {
+    margin: 1rem;
+    flex: 40%;
 }
 
 .tags {
     display: flex;
+    flex-wrap: wrap;
     margin: 12px 0px 12px 0px;
     font-family: 'Jost Regular';
 }
