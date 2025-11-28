@@ -1,12 +1,15 @@
 <div class="container">
-    {{ translatedContent['filters'] }}: {{ filteredProjects.length }}
-    <app-filter-category [categories]="categories" (changed)="onCategoryChanged($event)"></app-filter-category>
-    <div class="row">
+    <div class="filters-section">
+        {{ translatedContent['filters'] }}: {{ filteredProjects.length }}
+        <app-filter-category [categories]="categories" (changed)="onCategoryChanged($event)"></app-filter-category>
+    </div>
+
+    <div class="projects-list">
         @for(proyecto of filteredProjects; track proyecto){
         <app-box-project [project]="proyecto" class="project-box"></app-box-project>
         }
         @if(filteredProjects.length === 0){
-            <p>No projects found.</p>
+        <p>No projects found.</p>
         }
     </div>
 </div>
