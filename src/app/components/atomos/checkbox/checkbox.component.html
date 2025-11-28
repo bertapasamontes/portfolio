@@ -1,1 +1,2 @@
-<p>checkbox works!</p>
+<input type="checkbox" class="btn-check" [value]="category" [id]="category" [checked]="checked" (change)="onCheckboxChanged($event)">
+<label [for]="category" class="btn btn-outline-primary"> {{ category }}</label>

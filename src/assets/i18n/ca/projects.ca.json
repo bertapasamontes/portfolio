@@ -2,6 +2,7 @@
     {
         "id": 3,
         "name": "ITA Challenges",
+        "category": ["Front-End"],
         "description": "Pàgina web de reptes de programació",
         "tags": ["Figma", "Responsive Design", "Accesibilidad", "Usabilidad", "UX/UI"],
         "image": "https://berta.alwaysdata.net/miportfolio/img/screenchot_ita-challenges.png",
@@ -11,6 +12,7 @@
     },{
         "id": 2,
         "name": "Michi",
+        "category": ["Front-End", "UX/UI"],
         "description": "Menjar",
         "tags": ["Angular", "TypeScript", "Node.js", "Express", "Responsive Design", "UX/UI"],
         "image": "https://raw.githubusercontent.com/bertapasamontes/Michi/deploy/image.png",
@@ -21,6 +23,7 @@
     {
         "id": 1,
         "name": "ToBliss",
+        "category": ["UX/UI"],
         "description": "Pàgina web responsive accessible",
         "tags": ["Figma", "Responsive Design", "Accesibilidad", "Usabilidad", "UX/UI"],
         "image": "https://berta.alwaysdata.net/miportfolio/img/Screenshot_landing_ToBliss.png",

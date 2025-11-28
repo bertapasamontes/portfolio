@@ -1,0 +1,6 @@
+<div class="category-filters">
+    @for(category of categories; track category){
+    <app-category-checkbox (changed)="onCategoryChanged($event)" [category]="category"></app-category-checkbox>
+    }
+</div>
+
