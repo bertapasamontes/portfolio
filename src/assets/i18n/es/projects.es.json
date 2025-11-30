@@ -2,6 +2,7 @@
     {
         "id": 3,
         "name": "ITA Challenges",
+        "slug": "ita-challenges",
         "category": ["Front-End"],
         "description": "Pagina web de retos de programación",
         "tags": ["Figma", "Responsive Design", "Accesibilidad", "Usabilidad", "UX/UI"],
@@ -14,6 +15,7 @@
     {
         "id": 2,
         "name": "Michi",
+        "slug": "michi",
         "category": ["Front-End", "UX/UI"],
         "description": "Chollos de comida",
         "tags": ["Angular", "TypeScript", "Node.js", "Express", "Responsive Design", "UX/UI"],
@@ -24,6 +26,7 @@
     },{
         "id": 1,
         "name": "ToBliss",
+        "slug": "to-bliss",
         "category": ["UX/UI"],
         "description": "Pagina web responsive accesible",
         "tags": ["Figma", "Responsive Design", "Accesibilidad", "Usabilidad", "UX/UI"],

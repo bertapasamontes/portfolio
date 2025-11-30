@@ -1,12 +1,13 @@
 import { Component, Input } from '@angular/core';
-import { NgClass, NgStyle } from "../../../../../node_modules/@angular/common/index";
+import { RouterLink } from '@angular/router';
+
 
 @Component({
   selector: 'app-box-project',
-  imports: [],
+  imports: [RouterLink],
   templateUrl: './box-project.component.html',
   styleUrl: './box-project.component.scss'
 })
 export class BoxProjectComponent {
-  @Input() project!:{name:string, description: string, image: string, tags:string[], type_contract:string, position: string, duration: string};
+  @Input() project!:{name:string, slug: string,description: string, image: string, tags:string[], type_contract:string, position: string, duration: string};
 }

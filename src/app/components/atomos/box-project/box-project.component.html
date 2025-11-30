@@ -1,4 +1,4 @@
-<div class="box box-proyecto">
+<a class="box box-proyecto" [routerLink]="['/project', project.slug]">
     <figure class="image-box"><img src="{{project.image}}" alt="img-{{project.name}}" class="img-fluid img-project">
     </figure>
     <div class="data-box">
@@ -9,4 +9,4 @@
         <h2 class="titulo-proyecto t-16">{{project.name}}</h2>
         <p class="t-13">{{project.description}}</p>
     </div>
-</div>
+</a>

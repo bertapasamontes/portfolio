@@ -3,7 +3,10 @@
     display: flex;
     flex-direction: row;
     position: relative;
+    text-decoration: none;
+    color: inherit;
 }
+
 
 @media (max-width: 800px) {
     .box-proyecto {
