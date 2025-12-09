@@ -1,0 +1,8 @@
+<div class="breadcrumb-molecule">
+    @for(crumb of items; track crumb){
+        <div class="crumb">
+             <app-breadcrumb-atom [label]="crumb.label" [url]="crumb.url" [isActive]="crumb.isActive"></app-breadcrumb-atom>
+        </div>
+       
+    }
+</div>
