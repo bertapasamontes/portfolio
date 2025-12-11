@@ -16,7 +16,7 @@ export class PortfolioLayoutComponent {
   categories: any[] = [];
   activeCategory: string[] = [];
 
-  translatedContent: Record<string,string> = {};
+  translatedContent: Record<string,any> = {};
 
   constructor(
     private projectsService: ProjectsService,
@@ -27,6 +27,7 @@ export class PortfolioLayoutComponent {
     this.translationService.translations$.subscribe(data => {
       if(data) this.translatedContent = data.common;
     });
+    console.log(this.translatedContent)
 
     this.projectsService.getProjects().subscribe((data)=>{
       this.projects = data;

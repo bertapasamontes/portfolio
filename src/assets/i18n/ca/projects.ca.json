@@ -5,22 +5,26 @@
         "slug": "ita-challenges",
         "category": ["Front-End"],
         "description": "Pàgina web de reptes de programació",
+        "bigDescription":"ITA Challenges és una plataforma en línia que ofereix una varietat de reptes de programació per a desenvolupadors de diferents nivells. L'objectiu és proporcionar un espai on els programadors puguin posar a prova les seves habilitats, aprendre noves tècniques i competir amb altres desenvolupadors. La plataforma està dissenyada per ser accessible i fàcil d'utilitzar, amb un enfocament en la usabilitat i l'experiència de l'usuari.",
         "tags": ["Figma", "Responsive Design", "Accesibilidad", "Usabilidad", "UX/UI"],
         "image": "https://berta.alwaysdata.net/miportfolio/img/screenchot_ita-challenges.png",
         "type_contract": "Pràctiques",
         "position": "Desenvolupadora Front-end",
-        "duration": "1 mes"
+        "duration": "1 mes",
+        "myContribution": "Desenvolupament d'una pàgina web responsive amb un disseny atractiu i fàcil de navegar."
     },{
         "id": 2,
         "name": "Michi",
         "slug": "michi",
         "category": ["Front-End", "UX/UI"],
         "description": "Menjar",
+        "bigDescription": "Michi és una aplicació web dissenyada per ajudar els usuaris a trobar ofertes i promocions de menjar. L'aplicació ofereix una interfície intuitiva i fàcil d'utilitzar, permetent als usuaris buscar ofertes segons la seva ubicació i preferències.",
         "tags": ["Angular", "TypeScript", "Node.js", "Express", "Responsive Design", "UX/UI"],
         "image": "https://raw.githubusercontent.com/bertapasamontes/Michi/deploy/image.png",
         "type_contract": "Projecte",
         "position": "Dissenyadora UX/UI i Desenvolupadora Front-End",
-        "duration": "1 any"
+        "duration": "1 any",
+        "myContribution": "Desenvolupament d'una aplicació web per trobar menjar, amb un enfocament en l'experiència de l'usuari i el disseny responsiu."
     },
     {
         "id": 1,
@@ -28,10 +32,12 @@
         "slug": "to-bliss",
         "category": ["UX/UI"],
         "description": "Pàgina web responsive accessible",
+        "bigDescription":"ToBliss és una pàgina web dissenyada per oferir una experiència d'usuari òptima a través d'un disseny accessible i responsiu. L'objectiu és garantir que tots els usuaris, independentment de les seves capacitats, puguin navegar i interactuar amb el contingut de manera efectiva. El disseny es centra en la usabilitat, l'accessibilitat i l'estètica visual per crear una experiència agradable i inclusiva.",
         "tags": ["Figma", "Responsive Design", "Accesibilidad", "Usabilidad", "UX/UI"],
         "image": "https://berta.alwaysdata.net/miportfolio/img/Screenshot_landing_ToBliss.png",
         "type_contract": "Estudi de cas",
         "position": "Dissenyadora UX/UI",
-        "duration": "6 mesos"
+        "duration": "6 mesos",
+        "myContribution": "Disseny d'una pàgina web accessible i responsiva per a una millor experiència d'usuari."
     }
 ]

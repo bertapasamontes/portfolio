@@ -2,6 +2,8 @@ import { Component, Input } from '@angular/core';
 import { ProjectsService } from '../../../services/projects.service';
 import { ActivatedRoute } from '@angular/router';
 import { BreadcrumbMoleculeComponent } from '../../molecules/breadcrumb-molecule/breadcrumb-molecule.component';
+import { TranslationService } from '../../../services/translation.service';
+import { CommonTranslations } from '../../../interfaces/translation-types';
 
 @Component({
   selector: 'app-project-detail',
@@ -18,13 +20,19 @@ export class ProjectDetailComponent {
   slug: string = 'gola';
 
   breadcrumbItems: any[] = []
-  
+
+  translatedContent: CommonTranslations | null = null;
   constructor(
     private projectsService: ProjectsService,
-    private route: ActivatedRoute
+    private route: ActivatedRoute,
+    private translationService: TranslationService
   ){}
 
   ngOnInit(){
+    this.translationService.translations$.subscribe(data => {
+      if(data) this.translatedContent = data.common;
+    })
+    
     this.slug = this.route.snapshot.params['name'] || 'doesnt-exist';
     this.projectsService.getProjects().subscribe((data)=>{
       this.projects = data;

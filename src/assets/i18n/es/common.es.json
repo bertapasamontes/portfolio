@@ -1,5 +1,12 @@
 {
     "projects": "Proyectos",
     "about": "Sobre mí",
-    "filters": "Proyectos filtrados"
+    "filters": "Proyectos filtrados",
+    "project-detail": {
+        "role": "Rol",
+        "description": "Descripción",
+        "duration": "Duración",
+        "myContribution": "Objetivo",
+        "briefing": "Contexto"
+    }
 }
